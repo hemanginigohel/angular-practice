@@ -1,0 +1,11 @@
+<div class="container">
+    <h4> Login </h4>
+    <form  [formGroup]="loginForm" name="loginForm" id="loginForm" novalidate>
+        <label> Email </label>
+        <input type="text" formControlName="email" class="form-control">
+        <br>
+        <label> Password </label>
+        <input type="password" formControlName="password" class="form-control">
+        <button (click)="submit()" class="btn btn-info my-5">Log In</button>
+    </form>
+</div>
