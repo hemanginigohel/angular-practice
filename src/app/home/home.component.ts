@@ -16,6 +16,11 @@ export class HomeComponent implements OnInit, DoCheck {
   }
 
   ngDoCheck(): void {
-    console.log(this.kiloMetersToMilesPipe.transform(this.inputVal));
+    if (!isNaN(this.inputVal)) {
+      console.log(this.kiloMetersToMilesPipe.transform(this.inputVal));
+    }
+    else {
+      console.log('not a number');
+    }
   }
 }
