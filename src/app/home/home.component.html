@@ -1,0 +1,4 @@
+<h2>Custom Pipe</h2>
+<label for="">Enter Kilometers value ::</label>
+<input type="text" [(ngModel)]="inputVal">
+<p>Value in miles:: {{ (inputVal | kiloMetersToMiles) || 0}} </p>
